@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="papers.html">Papers</a>
+        <a href="cv.html">CV</a>
+    </nav>
+
+    <!-- Projects Section -->
+    <section>
+        <h2>My Projects</h2>
+
+        <h3>Current Projects</h3>
+        <ul>
+            <li>
+                <div class="project-header">
+                    <h4>Project 1</h4>
+                    <button class="expand-btn">+</button>
+                </div>
+                <div class="project-details">
+                    <p>Description of Project 1.</p>
+                    <p>More details about Project 1.</p>
+                </div>
+            </li>
+        </ul>
+
+        <h3>Past Projects</h3>
+        <ul>
+            <li>
+                <div class="project-header">
+                    <h4>Project 2</h4>
+                    <button class="expand-btn">+</button>
+                </div>
+                <div class="project-details">
+                    <p>Description of Project 2.</p>
+                    <p>More details about Project 2.</p>
+                </div>
+            </li>
+            <li>
+                <div class="project-header">
+                    <h4>Project 3</h4>
+                    <button class="expand-btn">+</button>
+                </div>
+                <div class="project-details">
+                    <p>Description of Project 3.</p>
+                    <p>More details about Project 3.</p>
+                </div>
+            </li>
+        </ul>
+
+        <h3>Future Projects</h3>
+        <ul>
+            <li>
+                <div class="project-header">
+                    <h4>Project 4</h4>
+                    <button class="expand-btn">+</button>
+                </div>
+                <div class="project-details">
+                    <p>Description of Project 4.</p>
+                    <p>More details about Project 4.</p>
+                </div>
+            </li>
+            <li>
+                <div class="project-header">
+                    <h4>Project 5</h4>
+                    <button class="expand-btn">+</button>
+                </div>
+                <div class="project-details">
+                    <p>Description of Project 5.</p>
+                    <p>More details about Project 5.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 John Doe</p>
+    </footer>
+
+    <!-- JavaScript for Expandable List -->
+    <script>
+        const expandBtns = document.querySelectorAll('.expand-btn');
+
+        expandBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const projectDetails = btn.parentElement.nextElementSibling;
+                projectDetails.classList.toggle('show-details');
+                btn.textContent = projectDetails.classList.contains('show-details') ? '-' : '+';
+            });
+        });
+    </script>
+</body>
+</html>

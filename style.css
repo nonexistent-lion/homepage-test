@@ -1,0 +1,76 @@
+/* Load Libre Franklin font from external source */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap');
+
+/* Set color variables */
+:root {
+  --primary-color: #333333;
+  --secondary-color: #ffffff;
+  --accent-color: #4d8c7a;
+}
+
+/* Set font-family for body */
+body {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+/* Set font-family and color for headers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+/* Set font-family and color for navigation links */
+nav a {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+/* Style for navigation links on hover */
+nav a:hover {
+  color: var(--accent-color);
+}
+
+/* Set font-family for project and paper list */
+ul li {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+}
+
+/* Set font-family and color for the footer */
+footer {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+}
+
+/* Set font-family and color for CV page link */
+.cv-link {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+/* Style for CV page link on hover */
+.cv-link:hover {
+  color: var(--accent-color);
+}
+
+/* Style for project list item details */
+.project-details {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--primary-color);
+  display: none;
+}
+
+/* Style for project list item on hover */
+.project-list li:hover .project-details {
+  display: block;
+}
+/* Set colors for Current, Past, and Future project headings */
+.current-projects, .past-projects, .future-projects {
+  color: var(--accent-color);
+}
